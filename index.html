@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Angular example</title>
+		<meta charSet="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<style media="only screen">
+            html, body, #app {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                box-sizing: border-box;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            html {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0;
+                overflow: auto;
+            }
+
+            body {
+                padding: 1rem;
+                overflow: auto;
+            }
+        </style>
+		<link rel="stylesheet" href="styles.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+		</script>
+	</head>
+	<body>
+		<div id="app">
+			<my-app>Loading Angular example&hellip;</my-app>
+		</div>
+		<script>document.write('<base href="' + document.location + '" />');</script>
+		<script src="https://cdn.jsdelivr.net/npm/core-js-bundle@3.6.5/minified.js">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.2/dist/zone.min.js">
+		</script>
+		<script>
+            var appLocation = './';
+            var boilerplatePath = '';
+            var systemJsMap = {
+                "@ag-grid-community/angular": "https://cdn.jsdelivr.net/npm/@ag-grid-community/angular@29.3.5/",
+                "@ag-grid-community/styles": "https://cdn.jsdelivr.net/npm/@ag-grid-community/styles@29.3.5",
+                "ag-grid-angular": "https://cdn.jsdelivr.net/npm/ag-grid-angular@29.3.5/",
+                "ag-grid-community": "https://cdn.jsdelivr.net/npm/ag-grid-community@29.3.5",
+                "ag-grid-enterprise": "https://cdn.jsdelivr.net/npm/ag-grid-enterprise@29.3.5/"
+            };
+            var systemJsPaths = {
+                "@ag-grid-community/client-side-row-model": "https://cdn.jsdelivr.net/npm/@ag-grid-community/client-side-row-model@29.3.5/dist/client-side-row-model.cjs.min.js",
+                "@ag-grid-community/core": "https://cdn.jsdelivr.net/npm/@ag-grid-community/core@29.3.5/dist/core.cjs.min.js",
+                "@ag-grid-community/csv-export": "https://cdn.jsdelivr.net/npm/@ag-grid-community/csv-export@29.3.5/dist/csv-export.cjs.min.js",
+                "@ag-grid-community/infinite-row-model": "https://cdn.jsdelivr.net/npm/@ag-grid-community/infinite-row-model@29.3.5/dist/infinite-row-model.cjs.min.js"
+            };
+        </script>
+		<script src="https://cdn.jsdelivr.net/npm/systemjs@0.21.6/dist/system.js">
+		</script>
+		<script src="systemjs.config.js">
+		</script>
+		<script>System.import('main.ts').catch(function(err) { console.error(err); });</script>
+	</body>
+</html>
